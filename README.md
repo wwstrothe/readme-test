@@ -19,7 +19,7 @@
   
   ## [Installation](#table-of-contents)
   
-  <br>1. Make sure you have node.js installed. <br> 2. Clone the repository to your local machine. <br> 3. Run the command "npm install". <br> 4. Run "node index.js". <br> 5. Answer a series of questions. <br> 6. Check the root folder to view your README.
+  <br>1. Make sure you have node.js installed. <br> 2. Clone the repository to your local machine. <br> 3. Run the command "npm install". <br> 4. Run "node index.js". <br> 5. Answer a series of questions. <br> 6. View generatedReadMe.md in the app folder.
   
   ## [Usage](#table-of-contents)
   

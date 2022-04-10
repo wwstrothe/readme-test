@@ -115,7 +115,7 @@ function init() {
   .prompt(questions)
   .then((answers) => {
     const mdString = generateMarkdown(answers);
-    writeReadme('./dist/ReadMe.md', mdString);
+    writeReadme('generatedReadMe.md', mdString);
   });
 }
 
