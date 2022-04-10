@@ -44,7 +44,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributors](#contributors)
+  * [Contribution](#contribution)
   * [Tests](#tests)
   * [Questions](#questions)
   
@@ -64,7 +64,7 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(renderLicenseBadge(data.license))}
   
-  ## [Contributors](#table-of-contents)
+  ## [Contribution](#table-of-contents)
 
   ${data.contributors}
   
@@ -74,8 +74,8 @@ function generateMarkdown(data) {
   
   ## [Questions](#table-of-contents)
   
-  * If you have any questions please [**Email**](mailto:${data.email}) me Ü
-  * Check out more of my work at [**GitHub**](${data.github}) Ü
+  * If you have any questions please [**Email**](mailto:${data.email}) me
+  * Check out more of my work at [**GitHub**](https://www.github.com/${data.github})
   
   
 `;

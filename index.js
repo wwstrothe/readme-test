@@ -6,10 +6,10 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
   {
-    message: "What is the title of your project? (required)",
+    message: "What is the title of your project? (Required)",
     type: "input",
     name: "title",
-    validate: titleInput => {
+    validate: (titleInput) => {
       if (titleInput) {
         return true;
       } else {
@@ -18,10 +18,10 @@ const questions = [
     },
   },
   {
-    message: "Enter a brief description of the project. (required)",
+    message: "Enter a brief description of the project. (Required)",
     type: "input",
     name: "description",
-    validate: descriptionInput => {
+    validate: (descriptionInput) => {
       if (descriptionInput) {
         return true;
       } else {
@@ -30,22 +30,21 @@ const questions = [
     },
   },
   {
-    message: "What type of licenses, if any, is this project using?",
+    message: "What is your project licensed under?",
     type: "list",
     name: "license",
     choices: ["MIT", "Apache 2.0", "GNU V3", "Mozilla 2.0", "None"],
   },
   {
-    message:
-      "Please list any required packages for installation of your project",
+    message: "Enter instructions for how to install your application.",
     type: "input",
     name: "installation",
   },
   {
-    message: "How will the project be used? (required)",
+    message: "How to use this project? (Required)",
     type: "input",
     name: "usage",
-    validate: usageInput => {
+    validate: (usageInput) => {
       if (usageInput) {
         return true;
       } else {
@@ -54,7 +53,7 @@ const questions = [
     },
   },
   {
-    message: "Who contributed to this project",
+    message: "How to contribute to this project",
     type: "input",
     name: "contributors",
   },
@@ -64,10 +63,10 @@ const questions = [
     name: "tests",
   },
   {
-    message: "Enter the GitHub URL to your project. (required)",
+    message: "Enter the GitHub URL to your project. (Required)",
     type: "input",
     name: "repo",
-    validate: repoInput => {
+    validate: (repoInput) => {
       if (repoInput) {
         return true;
       } else {
@@ -76,10 +75,10 @@ const questions = [
     },
   },
   {
-    message: "Enter your GitHub username. (required)",
+    message: "Enter your GitHub username. (Required)",
     type: "input",
     name: "github",
-    validate: githubInput => {
+    validate: (githubInput) => {
       if (githubInput) {
         return true;
       } else {
@@ -88,10 +87,11 @@ const questions = [
     },
   },
   {
-    message: "Please provide an email address for others to reach you with questions. (required)",
+    message:
+      "Please provide an email address for others to reach you with questions. (Required)",
     type: "input",
     name: "email",
-    validate: emailInput => {
+    validate: (emailInput) => {
       if (emailInput) {
         return true;
       } else {
