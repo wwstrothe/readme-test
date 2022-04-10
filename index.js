@@ -63,7 +63,7 @@ const questions = [
     name: "tests",
   },
   {
-    message: "Enter the GitHub URL to your project. (Required)",
+    message: "Enter the full GitHub URL to your project. (Required)",
     type: "input",
     name: "repo",
     validate: (repoInput) => {
@@ -115,7 +115,7 @@ function init() {
   .prompt(questions)
   .then((answers) => {
     const mdString = generateMarkdown(answers);
-    writeReadme('ReadMe.md', mdString);
+    writeReadme('./dist/ReadMe.md', mdString);
   });
 }
 

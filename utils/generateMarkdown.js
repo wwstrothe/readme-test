@@ -77,7 +77,6 @@ function generateMarkdown(data) {
   * If you have any questions please [**Email**](mailto:${data.email}) me
   * Check out more of my work at [**GitHub**](https://www.github.com/${data.github})
   
-  
 `;
 }
 
